@@ -11,7 +11,7 @@ export const Home = () => {
 
   useEffect(()=>{
     const fetchWorkout = async()=>{
-      const res = await fetch('https://renderbackend.render.app' , {
+      const res = await fetch('https://renderbackend.onrender.com' , {
         headers : {
           'Authorization' : `Bearer ${user.token}` 
         }

@@ -10,7 +10,7 @@ export const useSignUp = () => {
         setIsLoading(true)
         setError(null)
 
-        const response = await fetch("https://renderbackend.render.app/api/user/signup" , {
+        const response = await fetch("https://renderbackend.onrender.com/api/user/signup" , {
             method : 'POST' ,
             headers : {'Content-Type' : 'application/json'} , 
             body : JSON.stringify({ email , password })
